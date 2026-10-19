@@ -1,0 +1,5 @@
+[build.environment]
+  # AI_TIMEOUT_MS is a non-sensitive numeric timeout whose value also appears
+  # as a documented default in .env.example and the code, so exclude it from
+  # secrets scanning.
+  SECRETS_SCAN_OMIT_KEYS = "AI_TIMEOUT_MS"
